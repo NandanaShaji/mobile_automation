@@ -1,0 +1,31 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    text-align: center;
+    }
+#register{
+    width: 30%;
+    padding: 10px;
+    background-color: blue;
+    border-color: blue;
+    color: white;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+#register:hover {
+    background-color: red; /* Background color on hover */
+    border-color: red;
+}
+div {
+    background-color: rgb(208, 251, 237);
+    padding: 20px;
+    margin: 100px auto;
+    width: 50%;
+    text-align: center;
+  }
+.text_box{
+    width: 70%;
+    padding: 10px;
+    border-radius: 30px;
+  }

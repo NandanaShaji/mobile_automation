@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./scriptinfo.js"></script>
+</head>
+<body>
+    <p>good morning</p>
+    <!-- <button onclick="console.log('helloooo')">Click Me</button> -->
+    <button onclick="setinfo()">Click Me</button>
+    <p id="adata"></p>
+    <p class="bdata"></p>
+    <script>
+        // alert("hello world")
+        // console.log("message in console")
+        // a=5
+        // var b=10.2
+        // let c="yellow"
+        // const d=true
+        // console.log(a)
+        // console.log(b)
+        // console.log(c)
+        // console.log(d)
+        // console.log(typeof(a))
+        // console.log(typeof(b))
+        // console.log(typeof(c))
+        // console.log(typeof(d))
+
+        // a=11
+        // b=2
+        // d=a/b
+        // console.log(d)
+        // console.log(parseInt(d))    //for getting integer part
+        // console.log(parseFloat(d))
+
+        // a=4**3
+        // console.log(a)
+
+        // a=1
+        // b=2
+        // x=3
+        // z=a*x**2 + b
+        // console.log(z)
+        // console.log(Math.sqrt(z))
+
+        // console.log(Math.sqrt(49))
+
+        // a=2
+        // b=11
+        // if(a>b){
+        //     console.log("a>b")
+        // }else{
+        //     console.log("a<b")
+        // }
+
+        // a=11
+        // if(a%2==0){
+        //     console.log("a is even")
+        // }else{
+        //     console.log("a is odd")
+        // }
+
+        // mark=98
+        // if(mark>=90){
+        //     console.log("A")
+        // }
+        // else if(mark>=80){
+        //     console.log("B")
+        // }
+        // else if(mark>=70){
+        //     console.log("C")
+        // }
+        // else if(mark>=60){
+        //     console.log("D")
+        // }
+        // else if(mark>=50){
+        //     console.log("E")
+        // }
+        // else{
+        //     console.log("F")
+        // }
+
+    // day=5
+    // switch (day) {
+    // case 0:
+    //     console.log("Sunday")
+    //     break
+    // case 1:
+    //     console.log("Monday")
+    //     break
+    // case 2:
+    //     console.log("Tuesday")
+    //     break
+    // case 3:
+    //     console.log("Wednesday")
+    //     break
+    // case 4:
+    //     console.log("Thursday")
+    //     break
+    // case 5:
+    //     console.log("Friday")
+    //     break
+    // case 6:
+    //     console.log("Saturday")
+    // }
+
+    // price=100
+    // quantity=45
+    // total=price*quantity
+    // if(total>1000){
+    //     console.log(">1000")
+    // }else{
+    //     console.log("<1000")
+    // }
+
+    // let favDrink = prompt("What's your favorite cocktail drink?")
+
+    // i=1
+    // while(i<10){
+    //     console.log(i)
+    //     i+=1
+    // }
+
+    // //sum of even numbers from 10 to 30 = 220
+    // i=10
+    // s=0
+    // while(i<=30){
+    //     if(i%2==0){
+    //         s+=i
+    //     }
+    //     i+=1
+    // }
+    // console.log(s)
+
+    // //display the factorial of a number
+    // n=5
+    // fact=1
+    // while(n!=0){
+    //     fact*=n
+    //     n-=1
+    // }
+    // console.log(fact)
+
+    // //check whether a number is prime or not
+    // flag = 0
+    // n = 5
+    // i = 2
+    // while(i <= (n/2)){
+    //     if(n%i == 0){
+    //         flag = 1
+    //         break
+    //     }
+    //     i += 1
+    // } 
+    // if(flag==1){
+    //    console.log("not prime")
+    // }else{
+    //     console.log("prime")
+    // }
+
+    // //check whether a number is niven or not
+    // n=21
+    // num=n
+    // s=0
+    // while(n!=0){
+    //     rem=n%10
+    //     s+=rem
+    //     n=parseInt(n/10)
+
+    // }
+    // if(num%s==0){
+    //     console.log("niven")
+    // }else{
+    //     console.log("not niven")
+    // }
+
+    // //input any number, and display the sum of even digits
+    // n=564
+    // s=0
+    // while(n!=0){
+    //     rem=n%10
+    //     if(rem%2==0){
+    //         s+=rem
+    //     }
+    //     n=parseInt(n/10)
+    // }
+    // console.log(s)
+
+
+    // //check whether a number is armstrong or not
+    // n=1634
+    // num=n
+    // num1=n
+    // s=0
+    // count=0
+    // op=0
+    // while(n!=0){
+    //     rem=n%10
+    //     count+=1
+    //     n=parseInt(n/10)
+    // }
+    // power=count
+    // // console.log(count)
+    // while(count!=0){
+    //     rem=num%10
+    //     op+=rem**power
+    //     count-=1
+    //     num=parseInt(num/10)
+    // }
+    // if(op==num1){
+    //     console.log("armstrong")
+    // }else{
+    //     console.log("not armstrong")
+    // }
+
+    // for(i=1;i<=10;i++){
+    //     console.log(i)
+    // }
+
+    // //check whether a number is perfect or not
+    // n=496
+    // s=0
+    // for(i=1;i<n;i++){
+    //     if(n%i==0){
+    //         s+=i
+    //     }
+    // }
+    // if(s==n){
+    //     console.log("perfect")
+    // }else{
+    //     console.log("not perfect")
+    // }
+
+    // //check whether a number is strong or not
+    // n=145
+    // num=n
+    // s=0
+    
+    // for(i=n;i>0;i=parseInt(i/10)){
+    //     rem=i%10
+    //     fact=1
+    //     for(j=1;j<=rem;j++){
+    //         fact*=j
+    //     }
+    //     s+=fact        
+    // }
+    // if(num==s){
+    //     console.log("strong")
+    // }else{
+    //     console.log("not strong")
+    // }
+
+    // n=5
+    // for(i=1;i<=n;i++){
+    //     str=''
+    //     for(j=1;j<=i;j++){
+    //         str+='1 '
+    //     }
+    //     console.log(str)
+    // }
+
+    // n=5
+    // for(i=n;i>=1;i--){
+    //     str=''
+    //     for(j=i;j>=1;j--){
+    //         str+='1 '
+    //     }
+    //     console.log(str)
+    // }
+
+    // 25/02/2025    
+
+    // function sumval(x,y){
+    // console.log("hello world")
+    // s=x+y
+    // return s
+    // }
+
+    // i=1
+    // j=2
+    // a=sumval(i,j)
+    // console.log(a)
+    
+    // i=10
+    // j=20
+    // sumval = (x,y)=>{
+    //     console.log("arrow function")
+    //     return x+y
+    // }
+    // a=sumval(i,j)
+    // console.log(a)
+   
+    
+    </script>
+</body>
+</html>

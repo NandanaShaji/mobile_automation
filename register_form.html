@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" title="" type="" />
+  <script src="./scriptinfo.js"></script>
+</head>
+
+<body>
+  
+
+<div>
+
+  <h1>Register</h1>
+  
+  <p><input id="name" type="text" placeholder="Name" class="text_box"></p>  
+  <p><input id="email" type="text" placeholder="Email" class="text_box"></p>
+  <p><input type="text" placeholder="Password" class="text_box"></p>
+  <p><input type="text" placeholder="Confirm Password" class="text_box"></p>
+    
+  <p>
+    User:
+    <input class="user" type="radio" name="user" id="admin"/>Admin
+    <input class="user" type="radio" name="user" id="student"/>Student
+   </p>
+    
+   <p>
+     Courses:
+     <select name="courses" id="courses">
+       <option value="UG">UG</option>
+       <option value="PG">PG</option>
+	 </select>
+    </p>
+    
+    <p>
+     <input type="checkbox" name="tc" id="tc"/>Terms and conditions
+    <p>
+      
+    <p><button onclick="details()" id="register">
+        Register
+    </button></p>
+    
+    
+  </div> 
+</body>
+
+</html>

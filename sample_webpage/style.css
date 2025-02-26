@@ -1,0 +1,85 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.menu {
+    background-color: black;
+    overflow: hidden;
+    padding-left: 5%;
+  }
+
+.menu img{
+    padding-top: 1%;
+    padding-left: 25%;
+}
+
+  .menu a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 2% 7% 2%;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .menu a:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 1%;
+    background-color: grey;
+  }
+
+  .footer p{
+    color: white;
+  }
+
+  /*Add the below code to style.css*/
+
+.logo{
+    float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 20%;
+}
+
+.logo img{
+    margin: none;
+    width: 60%;
+    float: left;
+    padding: 2%;
+}   
+
+img{
+    width: 99.9%;
+}
+.models{
+    display: flow-root;
+}
+.models div{
+    float: left;
+    width: 45%;
+    padding: 2.5%;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    text-align: center;
+}
+.title{
+    margin-left: 25%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.about{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 2%;
+}
+.about_title{
+    font-size: 30px;
+}
