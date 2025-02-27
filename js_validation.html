@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./js_validation_style.css" title="" type="" />
+</head>
+
+<body>
+
+<h1>Sign Up</h1>
+
+<div class="body">
+<p>Username:</p>
+<p><input id="name" type="text" class="text_box"></p> 
+<span id="name_error" class="error"></span> 
+<span id="name_valid" class="valid"></span>
+<p>Email:</p>
+<p><input id="email" type="text" class="text_box"></p>
+<span id="email_error" class="error"></span> 
+<span id="email_valid" class="valid"></span>
+<p>Password:</p>
+<p><input id="pw" type="text" class="text_box"></p>
+<span id="pw_error" class="error"></span>
+<span id="pw_valid" class="valid"></span>
+<!-- <p>Password:</p>
+<input class="text_box" type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> -->
+<p>Confirm password:</p>
+<p><input id="cpw" type="text" class="text_box"></p>
+<span id="cpw_error" class="error"></span>
+<span id="cpw_valid" class="valid"></span>
+
+
+<p><button type="button" onclick="myFunction()">Submit</button></p>
+</div>
+
+
+
+<script>
+function myFunction() {
+    flag=0
+  // Get the value of the input field with id="numb"
+  let x = document.getElementById("name").value;
+  // If x is Not a Number or less than one or greater than 10
+  if (x.length <= 2 || x.length >= 25) {
+    document.getElementById("name_error").innerHTML = "Username must be between 3 and 25 characters";
+  } else {
+    document.getElementById("name_valid").innerHTML = "✔";
+  }
+
+  let y = document.getElementById("email").value;
+  // If x is Not a Number or less than one or greater than 10
+  if (y.includes("@gmail.com")) {
+    document.getElementById("email_valid").innerHTML = "✔";
+  } else {
+    document.getElementById("email_error").innerHTML = "Enter a valid email";
+  }
+
+  let z = document.getElementById("pw").value;
+
+  let regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{8,}$/;
+  text = "Password should contain atleast 8 characters,<br>including atleast 1 lowercase character, 1 uppercase<br>character,1 digit, and 1 special character"
+  if(regex.test(z)){
+    document.getElementById("pw_valid").innerHTML = "✔";
+  }else{
+    document.getElementById("pw_error").innerHTML = text
+  }
+
+  // If x is Not a Number or less than one or greater than 10
+//   if (z.length >= 8){
+
+//     for(i=0;i<=z.length;i++){
+
+//         if ((z[i]>='a' && z[i]<='z')){
+//             flag=1
+//         }else{
+//             document.getElementById("pw_error").innerHTML = "Password should contain atleat 1 lowercase character";
+//         }
+
+//         if(flag==1){
+//             if ((z[i]>='A' && z[i]<='Z')){
+//             flag=1
+//         }else{
+//             document.getElementById("pw_error").innerHTML = "Password should contain atleat 1 uppercase character";
+//         }
+//     }
+
+//         if(flag==1){
+//             if ((z[i]>=0 && z[i]<=9)){
+//             flag=1
+//         }else{
+//             document.getElementById("pw_error").innerHTML = "Password should contain atleat 1 digit";
+//         }
+//     }
+
+//         if(flag==1){
+//             if (z.includes('!') || z.includes('@') || z.includes('#') || z.includes('$') || z.includes('%') || z.includes('^') || z.includes('&') || z.includes('*') ){
+//             flag=1
+//         }else{
+//             document.getElementById("pw_error").innerHTML = "Password should contain atleat 1 special character";
+//         }
+//     }
+//     }
+//   }else{
+//     document.getElementById("pw_error").innerHTML = "Password should contain atleat 8 characters";
+//   }
+//   if(flag==1){
+//     document.getElementById("pw_error").innerHTML = "✔";
+//   }
+
+  let p = document.getElementById("cpw").value;
+  if(p==z){
+    document.getElementById("cpw_valid").innerHTML = "✔";
+  }else{
+    document.getElementById("cpw_error").innerHTML = "Passwords don't match"
+  }
+
+}
+
+  
+</script>
+
+</body>
+</html>

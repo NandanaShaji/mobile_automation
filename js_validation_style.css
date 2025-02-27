@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+    }
+.body{
+    padding: 10px;
+    margin-left: 40%;
+}
+
+.text_box{
+    width: 30%;
+    padding: 10px;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    border-color: blue;
+    width: 33.5%;
+    height: 30px
+}
+
+.error{
+    color: red;
+    font-size: 13px;
+}
+
+.valid{
+    color: green;
+    font-size: 13px;
+}
