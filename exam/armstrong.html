@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong</title>
+</head>
+<body>
+    <h1>
+        Check Armstrong
+    </h1>
+    <p>
+        <h3 id="text">
+        Enter the number:
+        </h3>
+    </p>
+    <p>
+        <input type="text" name="input" id="input">
+    </p>
+    <p>
+        <button onclick="armstrong()">
+            Submit
+        </button>
+        <p>
+            <span id="result"></span>
+        </p>
+        
+    </p>
+
+    <script>
+        armstrong = ()=>{
+            n=document.getElementById("input").value;
+            num=n
+            num1=n
+            s=0
+            count=0
+            op=0
+            while(n!=0){
+                rem=n%10
+                count+=1
+                n=parseInt(n/10)
+            }
+            power=count
+            while(count!=0){
+                rem=num%10
+                op+=rem**power
+                count-=1
+                num=parseInt(num/10)
+            }
+            if(op==num1){
+                document.getElementById("result").innerHTML = "The number is armstrong."
+            }else{
+                document.getElementById("result").innerHTML = "The number is not armstrong."
+            }
+    }
+
+    </script>
+    
+    <style>
+        body{
+            background-color: lavender;
+        }
+        h1{
+            padding-top: 5%;
+            text-align: center;
+            color: rgb(61, 61, 61);
+        }
+        #text{
+            padding-top: 10%;
+            text-align: center;
+            color: rgb(61, 61, 61);
+        }
+        p{
+            text-align: center;
+        }
+        #input{
+            height: 30px;
+        }
+        button{
+            height: 30px;
+            background-color: rgb(212, 212, 254);
+            border-color: rgb(212, 212, 254);
+            color: rgb(61, 61, 61);
+        }
+        button:hover{
+            background-color: rgb(190, 190, 255);
+        }
+    </style>
+
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>
+                <button onclick="prime()">
+                    Check Prime
+                </button>
+        </li>
+        <li>
+                <button onclick="armstrong()">
+                    Check Armstrong
+                </button>
+        </li>
+        <li>
+                <button onclick="series()">
+                    Fibonacci Series
+                </button>
+        </li>
+      </ul>
+
+      <script>
+        prime = ()=>{
+            flag = 0
+            n = prompt("Enter the number:");
+            i = 2
+            while(i <= (n/2)){
+                if(n%i == 0){
+                    flag = 1
+                    break
+                }
+                i += 1
+            } 
+            if(flag==1){
+                alert("The number is not prime.")
+            }else{
+                alert("The number is prime.")
+            }
+    }
+
+    armstrong = ()=>{
+            n=prompt("Enter the number:");
+            num=n
+            num1=n
+            s=0
+            count=0
+            op=0
+            while(n!=0){
+                rem=n%10
+                count+=1
+                n=parseInt(n/10)
+            }
+            power=count
+            while(count!=0){
+                rem=num%10
+                op+=rem**power
+                count-=1
+                num=parseInt(num/10)
+            }
+            if(op==num1){
+                alert("The number is armstrong.")
+            }else{
+                alert("The number is not armstrong.")
+            }
+    }
+
+    series = ()=>{
+            n=prompt("Enter the range:");
+            let n1 = 0, n2 = 1, nextTerm;
+            arr = []
+            for (let i = 1; i <= n; i++) {
+                arr.push(n1)
+                nextTerm = n1 + n2;
+                n1 = n2;
+                n2 = nextTerm;
+            }
+            alert(arr)
+    }
+      </script>
+
+      <style>
+        body{
+            background-color: lavender;
+        }
+        ul{
+            list-style-type: none;
+            padding-left: 30%;
+            padding-top: 3%;
+        }
+        li{
+           padding: 5%;
+        }
+        button{
+            width: 50%;
+            height: 70px;
+            font-size: 15px;
+            background-color: rgb(212, 212, 254);
+            border-color: rgb(212, 212, 254);
+            box-shadow: 10px 10px 5px rgb(194, 214, 221);
+            color: rgb(61, 61, 61);
+            
+        }
+      </style>
+</body>
+</html>

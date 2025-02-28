@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime</title>
+</head>
+<body>
+    <h1>
+        Check Prime
+    </h1>
+    <p>
+        <h3 id="text">
+        Enter the number:
+        </h3>
+    </p>
+    <p>
+        <input type="text" name="input" id="input">
+    </p>
+    <p>
+        <button onclick="prime()">
+            Submit
+        </button>
+        <p>
+            <span id="result"></span>
+        </p>
+        
+    </p>
+
+    <script>
+        prime = ()=>{
+            flag = 0
+            n = document.getElementById("input").value;
+            i = 2
+            while(i <= (n/2)){
+                if(n%i == 0){
+                    flag = 1
+                    break
+                }
+                i += 1
+            } 
+            if(flag==1){
+                document.getElementById("result").innerHTML = "The number is not prime."
+            }else{
+                document.getElementById("result").innerHTML = "The number is prime."
+            }
+    }
+    
+
+    </script>
+    
+    <style>
+        body{
+            background-color: lavender;
+        }
+        h1{
+            padding-top: 5%;
+            text-align: center;
+            color: rgb(61, 61, 61);
+        }
+        #text{
+            padding-top: 10%;
+            text-align: center;
+            color: rgb(61, 61, 61);
+        }
+        p{
+            text-align: center;
+        }
+        #input{
+            height: 30px;
+        }
+        button{
+            height: 30px;
+            background-color: rgb(212, 212, 254);
+            border-color: rgb(212, 212, 254);
+            color: rgb(61, 61, 61);
+        }
+        button:hover{
+            background-color: rgb(190, 190, 255);
+        }
+    </style>
+
+
+</body>
+</html>

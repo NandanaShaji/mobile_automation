@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
+</head>
+<body>
+    <h1>
+        Fibonacci Series
+    </h1>
+    <p>
+        <h3 id="text">
+        Enter the range:
+        </h3>
+    </p>
+    <p>
+        <input type="text" name="input" id="input">
+    </p>
+    <p>
+        <button onclick="series()">
+            Submit
+        </button>
+        <p>
+            <span id="result">
+            </span>
+        </p>
+        
+    </p>
+
+    <script>
+        series = ()=>{
+            n=document.getElementById("input").value;
+            let n1 = 0, n2 = 1, nextTerm;
+            arr = []
+            for (let i = 1; i <= n; i++) {
+                arr.push(n1)
+                nextTerm = n1 + n2;
+                n1 = n2;
+                n2 = nextTerm;
+            }
+            document.getElementById("result").innerHTML = arr
+    }
+
+    </script>
+    
+    <style>
+        body{
+            background-color: lavender;
+        }
+        h1{
+            padding-top: 5%;
+            text-align: center;
+            color: rgb(61, 61, 61);
+        }
+        #text{
+            padding-top: 10%;
+            text-align: center;
+            color: rgb(61, 61, 61);
+        }
+        p{
+            text-align: center;
+        }
+        #input{
+            height: 30px;
+        }
+        button{
+            height: 30px;
+            background-color: rgb(212, 212, 254);
+            border-color: rgb(212, 212, 254);
+            color: rgb(61, 61, 61);
+        }
+        button:hover{
+            background-color: rgb(190, 190, 255);
+        }
+    </style>
+
+
+</body>
+</html>

@@ -68,3 +68,33 @@ def continue_button():
 
 def finish():
     return "test-FINISH"
+
+def list_view():
+    return "new UiSelector().className(\"android.widget.ImageView\").instance(4)"
+
+def filter_option():
+    return "new UiSelector().className(\"android.widget.ImageView\").instance(5)"
+
+def low_to_high():
+    return "new UiSelector().text(\"Price (low to high)\")"
+
+def low_to_high_1():
+    return "//android.widget.TextView[@content-desc='test-Price' and @text='$7.99']"
+
+def low_to_high_2():
+    return "//android.widget.TextView[@content-desc='test-Price' and @text='$9.99']"
+
+def high_to_low():
+    return "new UiSelector().text(\"Price (high to low)\")"
+
+def high_to_low_1():
+    return "//android.widget.TextView[@content-desc='test-Price' and @text='$49.99']"
+
+def high_to_low_2():
+    return "//android.widget.TextView[@content-desc='test-Price' and @text='$29.99']"
+
+def list_pdt1():
+    return "new UiSelector().text(\"+\").instance(1)"
+
+def list_pdt2():
+    return "new UiSelector().text(\"+\").instance(2)"
